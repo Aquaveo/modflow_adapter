@@ -1,0 +1,18 @@
+# environment_py2.yml
+# Configuration file for creating a Conda Environment with dependencies needed for Tethys Platform.
+# Create the environment by running the following command (after installing Miniconda):
+#   $ conda env create -f environment_py2.yml
+
+name: modflow-adapter-testing
+
+channels:
+#- conda-forge
+- defaults
+
+dependencies:
+- python=3.*
+- numpy
+- pip:
+    - mock
+    - coverage
+    - flopy
